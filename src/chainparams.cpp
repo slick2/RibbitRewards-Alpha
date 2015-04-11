@@ -157,7 +157,12 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4);
 
+        /** Known seeds, need for seeds for more wallet */
         vSeeds.push_back(CDNSSeedData("162.243.230.181", "162.243.230.181"));
+        vSeeds.push_back(CDNSSeedData("104.236.100.118", "104.236.100.118"));
+        vSeeds.push_back(CDNSSeedData("104.236.100.209", "104.236.100.209"));
+        vSeeds.push_back(CDNSSeedData("104.236.100.210", "104.236.100.210"));
+
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fRequireRPCPassword = true;
